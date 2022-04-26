@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 1000px;
+  background-image: url(https://static3.bigstockphoto.com/0/4/2/large1500/240999178.jpg);
+  background-repeat: no-repeat;
+  /* keywors contain and cover */
+  background-size: contain;
+  border: 20px dashed #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  background-origin: border-box;
+}
