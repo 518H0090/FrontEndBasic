@@ -6,5 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: calc(50px + 10px);
+      height: 120px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    a::after {
+      content: "{" attr(href) "}";
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+    <h1>CSS functions</h1>
+    <!-- var biến trong css , linear-gradient màu chuyển,rgba màu trong suốt , rgb mã màu,calc tính toán ,attr trong thẻ html -->
+    <a href="https://www.facebook.com/">Tới Facebook</a>
+  </body>
 </html>
