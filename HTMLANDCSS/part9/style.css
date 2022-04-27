@@ -7,12 +7,15 @@ body {
 .header {
   width: 100%;
   height: 1000px;
-  background-image: url(https://static3.bigstockphoto.com/0/4/2/large1500/240999178.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(https://static3.bigstockphoto.com/0/4/2/large1500/240999178.jpg);
+  background-repeat: no-repeat; */
   /* keywors contain and cover */
-  background-size: contain;
-  border: 20px dashed #ccc;
+  /* background-size: contain; */
+  /* border: 20px dashed #ccc;
   padding: 20px;
   box-sizing: border-box;
-  background-origin: border-box;
+  background-origin: border-box; */
+  /* background-position: top 20px right 20px; */
+  background: url(https://static3.bigstockphoto.com/0/4/2/large1500/240999178.jpg)
+    center / contain no-repeat;
 }
