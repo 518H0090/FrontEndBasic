@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 2000px;
+    }
+
+    .box {
+      width: 100%;
+      height: 120px;
+      background-color: #333;
+      position: relative;
+      top: 500px;
+    }
+
+    .box-child {
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      position: absolute;
+      top: 25px;
+      left: 50%;
+    }
+
+    .posiFix {
+      position: fixed;
+      top: 0;
+    }
+
+    .posiSticky {
+      position: sticky;
+      top: 0;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="box-child"></div>
+    </div>
+
+    <div class="posiFix">
+      <h1>Fixed</h1>
+    </div>
+
+    <div class="posiSticky">
+      <h1>Sticky</h1>
+    </div>
+  </body>
+</html>
