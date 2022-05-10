@@ -1,90 +1,85 @@
 <!DOCTYPE html>
+<!-- https://www.youtube.com/watch?v=oYRda7UtuhA -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Use for responsive website -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>University Website Design - Easy Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="branding">
-          <h1>Acme Web Design</h1>
-        </div>
-        <nav>
+    <!-- Header -->
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <div id="navLinks" class="nav-links">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="">HOME</a>
             </li>
             <li>
-              <a href="about.html">About</a>
+              <a href="">ABOUT</a>
             </li>
             <li>
-              <a href="services.html">Services</a>
+              <a href="">COURSE</a>
+            </li>
+            <li>
+              <a href="">BLOG</a>
+            </li>
+            <li>
+              <a href="">CONTACT</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
 
-    <section id="showcase">
-      <div class="container">
-        <h1>Afordable Professional Web Design</h1>
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          aspernatur cumque quae culpa animi amet nobis unde eveniet tempora
-          similique voluptatem perferendis illum iure possimus, aliquam quidem
-          pariatur iste in?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, sunt
+          saepe doloribus laborum ea <br />
+          temporibus facere corrupti adipisci pariatur, excepturi non incidunt,
+          modi itaque natus laudantium aperiam.
         </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
       </div>
     </section>
 
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subcribe To Our Newsletter</h1>
-      </div>
-      <form action="">
-        <input type="email" placeholder="Enter Email ..." />
-        <button type="submit" class="button_1">Subscribe</button>
-      </form>
+    <!-- course -->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+        vero.
+      </p>
     </section>
 
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./img/logo_html.png" alt="" />
-          <h3>HTML5 MarkUp</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            modi ullam iste quia magnam neque qui in harum similique veritatis.
-          </p>
-        </div>
+    <!-- javascript for toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
 
-        <div class="box">
-          <img src="./img/logo_css.jfif" alt="" />
-          <h3>CSS3 Styling</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            modi ullam iste quia magnam neque qui in harum similique veritatis.
-          </p>
-        </div>
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
 
-        <div class="box">
-          <img src="./img/logo_graphic.jfif" alt="" />
-          <h3>Graphic Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            modi ullam iste quia magnam neque qui in harum similique veritatis.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>Acme Web Design, Copyright &copy; 2017</p>
-    </footer>
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
