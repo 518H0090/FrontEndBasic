@@ -1,0 +1,24 @@
+.main {
+  color: black;
+  width: 100%;
+}
+
+.main .main-content {
+  background-color: #ccc;
+}
+
+.main .main-content a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.main .main-content a:hover {
+  color: red;
+}
+
+.main .main-info {
+  color: black;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+}

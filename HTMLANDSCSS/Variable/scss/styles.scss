@@ -1,0 +1,29 @@
+$color: black;
+$color2: #ccc;
+
+.main {
+    color: $color;
+    width: 100%;
+
+    .main-content {
+        background-color: $color2;
+
+        a {
+            font-weight: bold;
+            font-size: 30px;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    .main-info {
+        color: $color;
+        font: {
+            family: Arial;
+            size: 30px;
+            weight: bold;
+        }
+    }
+}
