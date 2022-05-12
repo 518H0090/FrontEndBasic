@@ -1,0 +1,36 @@
+// Nested Rules SCSS
+// & tham chiếu lớp cha
+
+// thực hành
+// lớp cha
+.main {
+    color: rgb(7, 164, 52);
+    width: 100%;
+
+    // lớp con của main
+    .main-content {
+        background-color: rgb(159, 36, 36);
+        color: #ccc;
+
+        // con của main-content
+        a {
+            font-weight: bold;
+
+            // Tham chiếu đến lớp cha - ở đây là thẻ a
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    // lớp con của main
+    .main-info {
+        // vì đều có chung thuộc tính là font nên ta viết tóm gọn lại bằng cách [property] : { element1,elment2,elment3... }
+        font: {
+            size: 18px;
+            weight: 300;
+            family: "Courier New", Courier, monospace;
+        }
+    }
+}
