@@ -1,0 +1,11 @@
+// Sass - interpolation
+$name: main;
+$borderName: border;
+$arailFont: Arial;
+$fontFamily: font-family;
+
+.container .#{$name} {
+    color: red;
+    #{$borderName}-radius: 10px;
+    #{$fontFamily}: $arailFont;
+}
