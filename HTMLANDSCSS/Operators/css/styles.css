@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.operations {
+  width: 600px;
+  font-size: 20px;
+  height: 20px;
+  border-radius: 2px;
+  margin-right: 5px;
+  color: #020406;
+  /* cộng theo cặp ví dụ 02 + 04 04 + 05 06 +06 */
+  background-color: #06090c;
+}

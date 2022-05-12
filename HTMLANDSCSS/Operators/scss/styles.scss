@@ -1,0 +1,10 @@
+.operations {
+    width: (500px + 100px);
+    font-size: (300px-280px);
+    height: (100px/5);
+    border-radius: (200px/100);
+    margin-right: round($number: 100px/20);
+    color: #010203 * 2;
+    /* cộng theo cặp ví dụ 02 + 04 04 + 05 06 +06 */
+    background-color: #020406 + #040506;
+}
