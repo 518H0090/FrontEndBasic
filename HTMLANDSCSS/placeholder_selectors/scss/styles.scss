@@ -1,0 +1,18 @@
+%border {
+    border-radius: 10px 0px;
+}
+
+.background {
+    background-color: #fff;
+}
+
+.main {
+    width: 50px;
+    height: 200px;
+
+    @extend .background;
+}
+
+.main2 {
+    @extend %border;
+}

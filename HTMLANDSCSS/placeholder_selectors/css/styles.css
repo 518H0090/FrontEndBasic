@@ -1,0 +1,11 @@
+.main2 {
+  border-radius: 10px 0px;
+}
+.background,
+.main {
+  background-color: #fff;
+}
+.main {
+  width: 50px;
+  height: 200px;
+}
