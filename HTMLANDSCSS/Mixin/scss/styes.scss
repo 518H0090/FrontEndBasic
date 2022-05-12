@@ -1,0 +1,20 @@
+// Tương đương hàm trong ngôn ngữ lập trình
+@mixin border-rd($var1, $var2) {
+    border-radius: $var1 $var2;
+    -moz-border-radius: $var1 $var2;
+    -webkit-border-radius: $var1 $var2;
+    -o-border-radius: $var1 $var2;
+}
+
+.main {
+    width: 500px;
+    height: 200px;
+    border-radius: 10px 0px;
+    @include border-rd(10, 0);
+}
+
+.main2 {
+    width: 700px;
+    height: 300px;
+    @include border-rd(10, 5);
+}
