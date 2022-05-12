@@ -1,0 +1,57 @@
+$dieukien: maudo;
+
+// If else
+
+.main {
+    @if ($dieukien == maudo) {
+        background-color: red;
+    } @else if ($dieukien == mauxanh) {
+        background-color: blue;
+    } @else {
+        background-color: #ccc;
+    }
+}
+
+// For
+@for $i from 1 through 20 {
+    .item-#{$i} {
+        width: #{$i}em;
+    }
+}
+
+// Each
+.item1 {
+    background: url("/image/item1.png");
+    color: white;
+}
+
+.item2 {
+    background: url("/image/item2.png");
+    color: white;
+}
+
+.item3 {
+    background: url("/image/item3.png");
+    color: white;
+}
+
+// dùng để lặp trong list 1 danh sách
+@each $var, $color in (item1, red), (item2, blue), (item3, yellow) {
+    .#{$var} {
+        background: url("/image/#{$var}.png");
+        color: $color;
+    }
+}
+
+// while
+// là số thì nhúng biến trực tiếp vào
+// nếu là vừa chữ vừa số thì dùng interpolation
+$n: 1;
+
+@while ($n < 10) {
+    .item-#{$n} {
+        width: 12px * $n;
+        height: 6px * $n;
+        $n: $n + 1;
+    }
+}
