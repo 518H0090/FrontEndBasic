@@ -101,7 +101,9 @@ var titles = document.querySelectorAll(".title");
 console.log(titles);
 titles[0].textContent = "Dau";
 
+// querySelectorAll nth-child(odd)
 var odd = document.querySelectorAll("li:nth-child(odd)");
+// querySelectorAll nth-child(even)
 var even = document.querySelectorAll("li:nth-child(even)");
 
 for (var i = 0; i < odd.length; i++) {
