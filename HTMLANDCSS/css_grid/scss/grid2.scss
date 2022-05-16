@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "n c s"
+        "n f f";
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+}
+
+%base_css {
+    background-color: steelblue;
+    color: #fff;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+
+header {
+    @extend %base_css;
+    grid-area: h;
+}
+
+footer {
+    @extend %base_css;
+    grid-area: f;
+}
+
+main {
+    @extend %base_css;
+    grid-area: c;
+}
+
+aside {
+    @extend %base_css;
+    grid-area: s;
+}
+
+nav {
+    @extend %base_css;
+    grid-area: n;
+}
