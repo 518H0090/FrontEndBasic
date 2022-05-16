@@ -1,0 +1,71 @@
+div {
+    background-color: hsl(200, 70%, 30%);
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 30px auto;
+}
+
+%rotate_tran {
+    // transform: rotate(74deg);
+    // transform: rotate(0.25turn);
+    transform: rotateX(0.13turn) rotateY(0.23turn) rotateZ(0.1turn);
+}
+
+%scale_tran {
+    // transform: scale(1.5, 2);
+    transform: scaleX(1.5) scaleY(0.3) scaleZ(0.5);
+}
+
+%translate_tran {
+    // transform: scale(1.5, 2);
+    transform: translateX(-50px) translateY(100px) translateZ(30px);
+}
+
+// %skew_tran {
+//     transform: skew(30deg);
+// }
+
+%combi_tran {
+    transform: rotate(30deg) scaleX(0.75) translateY(-10px) skewY(30deg);
+}
+
+// use rotate
+// div {
+//     @extend %rotate_tran;
+// }
+
+// use scale
+// div {
+//     @extend %scale_tran;
+// }
+
+// use translate
+// div {
+//     @extend %translate_tran;
+//     position: relative;
+// }
+
+div::after {
+    content: "After";
+    background-color: red;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+// use skew
+// div {
+//     @extend %skew_tran;
+//     position: relative;
+// }
+
+// combine all transform
+div {
+    @extend %combi_tran;
+}

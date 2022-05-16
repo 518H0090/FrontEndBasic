@@ -1,0 +1,1 @@
+div{background-color:#175e82;width:100px;height:100px;color:white;display:flex;justify-content:center;align-items:center;font-size:2rem;margin:30px auto}div{transform:rotate(30deg) scaleX(0.75) translateY(-10px) skewY(30deg)}div::after{content:"After";background-color:red;position:absolute;top:0%;left:50%;transform:translate(-50%)}
