@@ -1,0 +1,175 @@
+// Universe Selector
+* {
+    font-size: 20px;
+}
+
+// Element selector
+span {
+    background-color: yellow;
+}
+
+// class selector
+.choose-class {
+    background-color: cyan;
+}
+
+// id selector
+#blue {
+    background-color: blue;
+}
+
+// element and class selector
+div.red {
+    background-color: red;
+}
+
+// element that has .red and .green-text class
+div.red.green-text {
+    background-color: red;
+    color: green;
+}
+
+// selector span and li element
+h3,
+li {
+    background-color: rgb(85, 189, 203);
+}
+
+// chọn các tag li là con của ul
+ul li {
+    color: #fff;
+}
+
+// b là con của div là được
+div b {
+    background-color: pink;
+}
+
+// b là con trực tiếp của div
+div > b {
+    background-color: brown;
+}
+
+// chọn tất cả thẻ li sau li.red
+li.red ~ li {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+// chọn 1 thẻ li nằm sau li.red
+li.red + li {
+    font-size: 30px;
+}
+
+//
+li.red + li.green {
+    background-color: green;
+    color: #ccc;
+}
+
+// pseudo class
+li:hover {
+    animation: leftToRight 1s ease infinite forwards;
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(50%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
+}
+
+input:focus {
+    background-color: rgb(212, 104, 154);
+    color: #fff;
+}
+
+input:required {
+    background-color: rgb(35, 150, 73);
+    color: #fff;
+}
+
+input:checked {
+    margin: 50px;
+}
+
+input:disabled {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+li:first-child {
+    text-indent: 50px;
+}
+
+li:last-child {
+    text-indent: 100px;
+}
+
+li:nth-child(3) {
+    background-color: violet;
+}
+
+li:nth-child(2n-1) {
+    background-color: brown;
+}
+
+li:nth-child(2n) {
+    background-color: rgba(24, 5, 70, 0.184);
+}
+
+li:nth-last-child(2n) {
+    background-color: darkgoldenrod;
+}
+
+span:only-child {
+    background-color: tomato;
+}
+
+span:first-of-type {
+    border: 20px solid rgb(255, 3, 3);
+}
+
+//
+span:not(.green) {
+    background-color: khaki;
+}
+
+// pseudo element
+div.red::before {
+    content: "Before";
+    background: red;
+    color: #fff;
+}
+
+// selector attribute có giá trị là true
+[data-red="true"] {
+    color: red;
+    background-color: brown;
+}
+
+// có giá trị bắt đầu từ 12
+[data-red^="12"] {
+    color: rgb(95, 116, 186);
+    background-color: rgb(217, 125, 175);
+}
+
+// có giá trị kết thúc là 23
+[data-red$="23"] {
+    color: rgb(31, 192, 71);
+    background-color: rgb(196, 60, 60);
+}
+
+// chỉ cần có giá trị 23 trong phần tử là được
+[data-red*="33"] {
+    color: yellow;
+    background-color: #ccc;
+}
